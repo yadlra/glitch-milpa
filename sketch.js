@@ -37,5 +37,5 @@ function displayType() {
 	fill(255);
 	textAlign(CENTER, CENTER);
 	textSize(20);
-	text(' \n' + glitch.types[typeCounter%glitch.types.length], 0, 0, width, height/2);
+	text('la milpa es futuro \n' + glitch.types[typeCounter%glitch.types.length], 0, 0, width, height/2);
 // }
