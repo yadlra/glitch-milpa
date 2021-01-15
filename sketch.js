@@ -16,7 +16,7 @@ function draw() {
 
 	glitch.buildImage(function() {
 		background(0); // clear background once image is ready
-		// displayType(); // show text
+		displayType(); // show text
 	});
 	image(glitch.image, width / 2, height / 2)
 }
@@ -28,14 +28,14 @@ function mousePressed() {
 
 function setupGlitch() {
 	loadImage('milpa.png', function(im) {
-// 		glitch.loadType(glitch.types[typeCounter%glitch.types.length]); // use random type
+		glitch.loadType(glitch.types[typeCounter%glitch.types.length]); // use random type
 		glitch.loadImage(im);
 	});
 }
 
-// function displayType() {
-// 	fill(255);
-// 	textAlign(CENTER, CENTER);
-// 	textSize(20);
-// 	text('press mouse to walkthrough image types \n' + glitch.types[typeCounter%glitch.types.length], 0, 0, width, height/2);
+function displayType() {
+	fill(255);
+	textAlign(CENTER, CENTER);
+	textSize(20);
+	text(' \n' + glitch.types[typeCounter%glitch.types.length], 0, 0, width, height/2);
 // }
