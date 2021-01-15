@@ -30,7 +30,7 @@ function mousePressed() {
 }
 
 function setupGlitch() {
-	loadImage('fish.png', function(im) {
+	loadImage('milpa.jpg', function(im) {
 		glitch.loadType(glitch.types[typeCounter%glitch.types.length]); // use random type
 		glitch.loadImage(im);
 	});
