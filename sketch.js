@@ -27,7 +27,7 @@ function mousePressed() {
 }
 
 function setupGlitch() {
-	loadImage('milpa.png', function(im) {
+	loadImage('milpa-system.jpg', function(im) {
 		glitch.loadType(glitch.types[typeCounter%glitch.types.length]); // use random type
 		glitch.loadImage(im);
 	});
@@ -39,3 +39,5 @@ function displayType() {
 	textSize(20);
 	text('cliquea para ver tipo de milpa y resistencia glitch \n' + glitch.types[typeCounter%glitch.types.length], 0, 0, width, height/2);
 }
+
+
