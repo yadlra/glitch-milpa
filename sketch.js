@@ -27,7 +27,7 @@ function mousePressed() {
 }
 
 function setupGlitch() {
-	loadImage('milpa-system.jpg', function(im) {
+	loadImage('milpa-system.png', function(im) {
 		glitch.loadType(glitch.types[typeCounter%glitch.types.length]); // use random type
 		glitch.loadImage(im);
 	});
