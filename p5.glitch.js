@@ -1,6 +1,3 @@
-// p5.glitch v0.1.0
-// cc teddavis.org 2020
-
 class Glitch{
 	constructor(){
 		this.mode = 'image';
@@ -271,7 +268,6 @@ class Glitch{
 		}
 	}
 
-	// set single byte of whole image to random value
 	randomByte(bytePos){
 		bytePos = this.parsePosition(bytePos);
 		let newData = this.bytesGlitched.slice();
@@ -542,8 +538,6 @@ class Glitch{
 	}
 
 
-	// https://stackoverflow.com/a/34356351/10885535
-	// Convert a hex string to a byte array
 	hexToBytes(hex) {
 		for (var bytes = [], c = 0; c < hex.length; c += 2) {
 			bytes.push(parseInt(hex.substr(c, 2), 16));
@@ -551,7 +545,6 @@ class Glitch{
 		return bytes;
 	}
 
-	// Convert a byte array to a hex string
 	bytesToHex(bytes) {
 		for (var hex = [], i = 0; i < bytes.length; i++) {
 			var current = bytes[i] < 0 ? bytes[i] + 256 : bytes[i];
