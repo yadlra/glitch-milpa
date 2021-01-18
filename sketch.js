@@ -12,7 +12,7 @@ function setup() {
 function draw() {
 	glitch.resetBytes();
 
-	glitch.randomBytes(2); //add random bytes for movement
+	glitch.randomBytes(2); //add random bytes for movemen
 
 	glitch.buildImage(function() {
 		background(0); // clear background once image is ready
